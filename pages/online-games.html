@@ -7,31 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/bootstrap-5.2.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/style/index.css">
-    <link rel="stylesheet" href="../assets/style/game.css">
+    <link rel="stylesheet" href="../assets/style/online-games.css">
     <title>Gaming Section</title>
 </head>
 
 <body>
     <!-- nav section -->
-    <nav id="navbar" class="navbar navbar-expand-lg">
-        <div class="container pt-2 pb-2">
-            <h1><a href="index.html" style="color: aliceblue; padding-top: 20px; text-decoration: none;">Wisteria</a>
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+        <div class="container pt-2 pb-2 d-lg-flex flex-lg-column">
+            <h1><a class="f-1" href="./index.html" style="color: aliceblue; padding-top: 20px; text-decoration: none;" class="hidden">Wisteria</a>
             </h1>
-
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="navbar-items" class="collapse navbar-collapse ms-lg-5">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Home </a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Discover</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Online games</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Business</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Music</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Wallpapers</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">To-do-list</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="#">Community forum</a></li>
+            <div id="navbar-items" class="collapse navbar-collapse">
+                <ul class="navbar-nav fs-5 flex-wrap justify-content-lg-center align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="../index.html">Home </a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./discover.html">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="#">Online games</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./online-movies.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./business.html">Business</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./musics.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./wallpapers.html">Wallpapers</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./todo-list.html">To-do-list</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./community-forum.html">Community forum</a></li>
                 </ul>
             </div>
         </div>
@@ -55,20 +54,20 @@
                         <button type="button" data-bs-slide-to="4" data-bs-target="#gameImages"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./images/img1.jpg" class="d-block w-100" />
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="../assets/images/img1.jpg" class="d-block w-100" />
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/img2.jpg" class="d-block w-100" />
+                            <img src="../assets/images/img2.jpg" class="d-block w-100" />
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/img3.jpg" class="d-block w-100" />
+                            <img src="../assets/images/img3.jpg" class="d-block w-100" />
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/img4.jpg" class="d-block w-100" />
+                            <img src="../assets/images/img4.jpg" class="d-block w-100" />
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/img5.jpg" class="d-block w-100" />
+                            <img src="../assets/images/img5.jpg" class="d-block w-100" />
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#gameImages"
@@ -89,9 +88,16 @@
             <section id="game-selections-section" class="col-lg-4 mt-3 p-2 border d-flex flex-column">
                 <h5 class="p-2 my-2 fw-bold">Recommended Games</h5>
                 <article>
-                    <div class="position-relative game-container rounded border px-3">
-                        <img src="./images/img1.jpg" class="game-icon"/>
-                        <span class="ms-2">Surbway Surfer</span>
+                    <div class="d-flex align-items-center rounded border px-3 py-1">
+                        <img src="../assets/images/img1.jpg" class="game-icon"/>
+                        <span class="d-flex ms-2 align-items-center me-auto">
+                            <span class="ms-1">Surbway Surfer</span>
+                            <img src="../assets/images/Vector.png" class="vector-icon align-self-center ms-3 me-1"/>
+                            <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
+                            <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
+                            <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
+                            <img src="../assets/images/Vector.png" class="vector-icon"/>
+                        </span>
                         <button class="btn btn-dark px-3 py-1 game-play-btn">PLAY</button>
                     </div>
                 </article>
@@ -107,8 +113,8 @@
     </main>
 
 
-    <script src="./bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
-    <script src="./index.js"></script>
+    <script src="../assets/bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/index.js"></script>
 </body>
 
 </html>

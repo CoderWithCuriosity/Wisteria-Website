@@ -5,9 +5,9 @@
     bottom: 40px;
 }
 
-
-.game-container{
-    margin: 0;
+.vector-icon{
+    width: fit-content;
+    height: fit-content;
 }
 
 .game-icon{
@@ -17,7 +17,6 @@
 }
 
 .game-play-btn{
-    position: absolute;
     right: 15px;
     top: 10px;
 }

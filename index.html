@@ -14,22 +14,22 @@
     <!-- nav section -->
     <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
         <div class="container pt-2 pb-2 d-lg-flex flex-lg-column">
-            <h1><a class="f-1" href="index.html" style="color: aliceblue; padding-top: 20px; text-decoration: none;">Wisteria</a>
+            <h1><a class="f-1" href="./index.html" style="color: aliceblue; padding-top: 20px; text-decoration: none;" class="hidden">Wisteria</a>
             </h1>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="navbar-items" class="collapse navbar-collapse">
                 <ul class="navbar-nav fs-5 flex-wrap justify-content-lg-center align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="#">Home </a></li>
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="#">Discover</a></li>
-                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="#">Online games</a></li>
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="#">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="#">Business</a></li>
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="#">Music</a></li>
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="#">Wallpapers</a></li>
-                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="#">To-do-list</a></li>
-                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="#">Community forum</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./index.html">Home </a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./pages/discover.html">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./pages/online-games.html">Online games</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./pages/online-movies.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./pages/business.html">Business</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./pages/musics.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link text-light hidden" href="./pages/wallpapers.html">Wallpapers</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./pages/todo-list.html">To-do-list</a></li>
+                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./pages/community-forum.html">Community forum</a></li>
                 </ul>
             </div>
         </div>
@@ -49,12 +49,12 @@
 
     <!--All Sections-->
     <section class="container-fluid">
-        <div class="row gy-4 gx-2 px-2 mb-4">
+        <div class="row gy-2 gx-2 px-2 mb-4">
             <div class="col-12 col-xl-6 position-relative hidden">
                 <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Discover</div>
                 <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
                 <button class="desc-btn mx-xl-4 mx-3" onclick="goto('./pages/discover.html')">Discover Now</button>
-                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -71,8 +71,8 @@
             <div class="col-12 col-xl-6 position-relative hidden">
                 <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Online Games</div>
                 <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
-                <button class="desc-btn mx-xl-4 mx-3" onclick="goto('./pages/games.html')">Play Now</button>
-                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                <button class="desc-btn mx-xl-4 mx-3" onclick="goto('./pages/online-games.html')">Play Now</button>
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -87,12 +87,12 @@
                 </div>
             </div>
         </div>
-         <div class="row gy-4 gx-2 px-2 mb-4">
+         <div class="row gy-2 gx-2 px-2 mb-4">
             <div class="col-12 col-xl-6 position-relative hidden">
                 <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Movies</div>
                 <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
                 <button class="desc-btn mx-xl-4 mx-3" onclick="goto('./pages/online-movies.html')">Watch Now</button>
-                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -110,7 +110,7 @@
                 <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Business</div>
                 <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
                 <button class="desc-btn mx-xl-4 mx-3" onclick="goto('./pages/business.html')">Read Now</button>
-                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -125,12 +125,12 @@
                 </div>
             </div>
         </div>
-        <div class="row gy-4 gx-2 px-2 mb-4">
+        <div class="row gy-2 gx-2 px-2 mb-4">
             <div class="col-12 col-xl-6 position-relative hidden">
                 <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Musics</div>
                 <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
                 <button class="desc-btn mx-xl-4 mx-3" onclick="goto('./pages/musics.html')">Listen Now</button>
-                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -146,9 +146,9 @@
             </div>
             <div class="col-12 col-xl-6 position-relative hidden">
                 <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Wallpapers</div>
-                <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
+                <p class="desc text-light px-xl-4 px-3" onclick="goto('./pages/wallpapers.html')">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
                 <button class="desc-btn mx-xl-4 mx-3">View Now</button>
-                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -163,13 +163,13 @@
                 </div>
             </div>
         </div>
-        <div class="row gy-4 gx-4 px-2 mb-4">
+        <div class="row gy-2 gx-4 px-2 mb-4">
             <div class="row gy-4 gx-2 px-2 mb-4">
                 <div class="col-12 col-xl-6 position-relative hidden">
                     <div class="desc-title fs-2 fw-bold px-xl-4 px-3">To-do-list</div>
                     <p class="desc text-light p-2 px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
-                    <button class="desc-btn mx-xl-4 mx-3">Make Now</button>
-                    <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                    <button class="desc-btn mx-xl-4 mx-3" onclick="goto('./pages/todo-list.html')">Make Now</button>
+                    <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -186,8 +186,8 @@
                 <div class="col-12 col-xl-6 position-relative hidden">
                     <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Community Forum</div>
                     <p class="desc text-light p-2 px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
-                    <button class="desc-btn mx-xl-4 mx-3">Join Now</button>
-                    <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                    <button class="desc-btn mx-xl-4 mx-3" onclick="goto('./pages/community-forum.html')">Join Now</button>
+                    <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -208,6 +208,7 @@
 
     <script src="./assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/todo-list.js"></script>
 </body>
 
 </html>
