@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/bootstrap-5.2.0-dist//css/bootstrap.css">
     <link rel="stylesheet" href="./assets/style/index.css">
-    <title>Gaming Section</title>
+    <title>Wisteria</title>
 </head>
 
 <body>
@@ -37,17 +37,24 @@
     </nav>
 
     <!--Welcoming Section-->
-    <section class="container text-center my-4 fs-4 d-flex justify-content-center hidden">
+    <section class="container-fluid text-center my-4 fs-4 d-flex flex-column justify-content-center hidden">
         <p class="px-5">
             Zino Welcome to Wisteria, Where we plan on making every day of your exhiliarating. Here are some of the activities you should check out.
         </p>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-primary px-5 py-3 me-2">Login</button>
+            <button class="btn btn-danger px-5 py-3 ms-2">Get Started</button>
+        </div>
     </section>
 
     <!--All Sections-->
     <section class="container-fluid">
-        <div class="row gy-4 gx-4 px-2">
-            <div class="col-12 col-lg-4 hidden">
-                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="row gy-4 gx-4 px-2 mb-4">
+            <div class="col-12 col-xl-6 position-relative hidden">
+                <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Discover</div>
+                <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
+                <button class="desc-btn mx-xl-4 mx-3">Discover Now</button>
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -61,23 +68,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 hidden">
-                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
-                        </div>
-                        <div class="carousel-item active">
-                            <img src="./assets/images/img2.jpg" class="d-block w-100" alt=""/>
-                        </div>
-                        <div class="carousel-item active">
-                            <img src="./assets/images/img3.jpg" class="d-block w-100" alt=""/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 hidden">
-                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+            <div class="col-12 col-xl-6 position-relative hidden">
+                <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Online Games</div>
+                <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
+                <button class="desc-btn mx-xl-4 mx-3" onclick="goto('./pages/gaming.html')">Play Now</button>
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
@@ -92,25 +87,127 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-
+         <div class="row gy-4 gx-4 px-2 mb-4">
+            <div class="col-12 col-xl-6 position-relative hidden">
+                <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Movies</div>
+                <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
+                <button class="desc-btn mx-xl-4 mx-3">Watch Now</button>
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img2.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img3.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-
+            <div class="col-12 col-xl-6 position-relative hidden">
+                <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Business</div>
+                <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
+                <button class="desc-btn mx-xl-4 mx-3">Read Now</button>
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img2.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img3.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-
+        </div>
+        <div class="row gy-4 gx-4 px-2 mb-4">
+            <div class="col-12 col-xl-6 position-relative hidden">
+                <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Music</div>
+                <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
+                <button class="desc-btn mx-xl-4 mx-3">Listen Now</button>
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img2.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img3.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-
+            <div class="col-12 col-xl-6 position-relative hidden">
+                <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Wallpapers</div>
+                <p class="desc text-light px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
+                <button class="desc-btn mx-xl-4 mx-3">View Now</button>
+                <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img2.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./assets/images/img3.jpg" class="d-block w-100" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-4 gx-4 px-2 mb-4">
+            <div class="row gy-4 gx-4 px-2 mb-4">
+                <div class="col-12 col-xl-6 position-relative hidden">
+                    <div class="desc-title fs-2 fw-bold px-xl-4 px-3">To-do-list</div>
+                    <p class="desc text-light p-2 px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
+                    <button class="desc-btn mx-xl-4 mx-3">Make Now</button>
+                    <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="./assets/images/img2.jpg" class="d-block w-100" alt=""/>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="./assets/images/img3.jpg" class="d-block w-100" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 position-relative hidden">
+                    <div class="desc-title fs-2 fw-bold px-xl-4 px-3">Community Forum</div>
+                    <p class="desc text-light p-2 px-xl-4 px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quibusdam ipsam error sapiente excepturi hic deleniti corporis illo ab! Adipisci ducimus accusamus ipsum eaque repellendus eum quas error eos?</p>
+                    <button class="desc-btn mx-xl-4 mx-3">Join Now</button>
+                    <div id="carouselGamingSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/img1.jpg" class="d-block w-100" alt=""/>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="./assets/images/img2.jpg" class="d-block w-100" alt=""/>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="./assets/images/img3.jpg" class="d-block w-100" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
     <script src="./assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
