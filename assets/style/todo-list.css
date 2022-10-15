@@ -5,7 +5,6 @@
 
 #display{
     min-height: 300px;
-    z-index: 1;
     background-color: white;
     transition: var(--transition);
     box-shadow: var(--shadow);

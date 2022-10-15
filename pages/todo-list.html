@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link text-light hidden" href="./business.html">Business</a></li>
                     <li class="nav-item"><a class="nav-link text-light hidden" href="./musics.html">Music</a></li>
                     <li class="nav-item"><a class="nav-link text-light hidden" href="./wallpapers.html">Wallpapers</a></li>
-                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./todo-list.html">To-do-list</a></li>
+                    <li class="nav-item"><a class="active nav-link text-light text-nowrap hidden" href="./todo-list.html">To-do-list</a></li>
                     <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./community-forum.html">Community forum</a></li>
                 </ul>
             </div>
@@ -36,12 +36,19 @@
         </div>
     </nav>
 
-    <section id="display" class="container position-absolute d-flex justify-content-center align-items-center top-50 start-50 translate-middle border w-50 py-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt eum autem laudantium ipsum illo explicabo consequatur nobis iusto dolorum? Culpa velit asperiores cumque a ad hic dicta natus nisi mollitia.</section>
+    <section id="display" class="container position-absolute justify-content-center align-items-center top-50 start-50 translate-middle border w-50 py-5 px-5 justify-content-center flex-column d-flex d-none">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src="../assets/images/edit-text.png" class="crud-icon"/>
+            <span class="fs-3">Edit Task</span>
+        </div>
+        <input id="edit-text" type="text" class="form-control my-2 border-dark"/>
+        <button id="edit-text-btn" class="btn btn-primary px-5 py-2">Edit</button>
+    </section>
 
     <main class="container mt-3 justify-content-center">
         <div id="todo-list-text" class="fs-2 fw-bold text-center">Todo List</div>
         <section id="form-field" class="d-flex">
-            <input type="text" name="todo" id="todo-input-box" class="form-control py-3 px-3 fs-5"/>
+            <input type="text" name="todo" id="todo-input-box" class="form-control border-dark py-3 px-3 fs-5" placeholder="Add a new task"/>
             <input type="button" value="Submit" id="submit-btn" class="btn btn-primary ms-2 me-2"/>
             <input type="button" value="Clear List" id="clear-all-btn" class="btn btn-danger"/>
         </section>

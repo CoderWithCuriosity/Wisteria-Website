@@ -2,6 +2,9 @@ const todoItem = document.querySelector("#todo-input-box");
 const submitBtn = document.querySelector("#submit-btn");
 const clearAllBtn = document.querySelector("#clear-all-btn");
 const todoListContainer = document.querySelector("#todo-list-container");
+const displayEditText = document.querySelector("#display");
+const editText = document.querySelector("#edit-text");
+const editTextBtn = document.querySelector("#edit-text-btn");
 let counter = 0;
 
 function createNewElement(todo, state = null) {
@@ -12,12 +15,11 @@ function createNewElement(todo, state = null) {
     const doneBtn = document.createElement('img');
     const editBtn = document.createElement("img");
 
-    itemWrapper.className = "container border d-flex align-items-center";
+    itemWrapper.className = "container border d-flex align-items-center fs-5 mb-1";
 
-    id.className = "counter";
+    id.className = "mx-3";
     id.textContent = counter += 1;
 
-    todoText.className = "todoText";
     todoText.textContent = todo;
     todoItem.value = "";
 
@@ -33,6 +35,16 @@ function createNewElement(todo, state = null) {
     if (state != null) {
         doneBtn.disabled = "true";
         itemWrapper.style.backgroundColor = "lightgreen";
+    }
+
+    editBtn.onclick = () => {
+        displayEditText.classList.remove('d-none');
+        editText.value = todoText.textContent;
+        editTextBtn.onclick = () => {
+            editBtn.parentElement.children[1].textContent = editText.value;
+            updateStoredValue();
+            displayEditText.classList.add('d-none');
+        }
     }
 
     deleteBtn.onclick = () => {
