@@ -78,27 +78,3 @@
     transition: var(--transition);
     opacity: 1;
 }
-
-@media (min-width: 992px) {
-    #images-carousel-section{
-        height: 500px;
-    }
-}
-
-@media (max-width: 991px) {
-    #images-carousel-section{
-        height: 500px;
-    }
-}
-
-@media (max-width: 768px) {
-    #images-carousel-section{
-        height: 300px;
-    }
-}
-
-@media (max-width: 576px) {
-    #images-carousel-section{
-        height: 300px;
-    }
-}
