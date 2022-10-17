@@ -47,12 +47,14 @@
 
     <main class="container mt-3 justify-content-center">
         <div id="todo-list-text" class="fs-2 fw-bold text-center">Todo List</div>
-        <section id="form-field" class="d-flex">
-            <input type="text" name="todo" id="todo-input-box" class="form-control border-dark py-3 px-3 fs-5" placeholder="Add a new task"/>
-            <input type="button" value="Submit" id="submit-btn" class="btn btn-primary ms-2 me-2"/>
-            <input type="button" value="Clear List" id="clear-all-btn" class="btn btn-danger"/>
+        <section id="form-field" class="d-flex flex-column flex-lg-row">
+            <input type="text" name="todo" id="todo-input-box" class="form-control border-dark py-3 px-3 fs-sm" placeholder="Add a new task" maxlength="50"/>
+            <div class="d-flex justify-content-between justify-content-lg-center mt-3 mt-lg-0">
+                <input type="button" value="Submit" id="submit-btn" class="btn btn-primary ms-2 me-2 fs-sm"/>
+                <input type="button" value="Clear List" id="clear-all-btn" class="btn btn-danger fs-sm"/>
+            </div>
         </section>
-        <section id="todo-list-container" class="py-3"></section>
+        <section id="todo-list-container" class="container py-3" ></section>
     </main>
 
     <script src="../assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>

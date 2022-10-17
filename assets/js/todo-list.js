@@ -12,25 +12,28 @@ function createNewElement(todo, state = null) {
     const id = document.createElement('span');
     const todoText = document.createElement('span');
     const deleteBtn = document.createElement('img');
-    const doneBtn = document.createElement('img');
+    const doneBtn = document.createElement('button');
+    const doneBtnImg = document.createElement('img');
     const editBtn = document.createElement("img");
 
-    itemWrapper.className = "container border d-flex align-items-center fs-5 mb-1";
+    itemWrapper.className = "container border d-flex align-items-center fs-5 mb-1 py-2 overflow-auto";
 
-    id.className = "mx-3";
+    id.className = "me-3";
     id.textContent = counter += 1;
 
+    todoText.className = "flex-grow-1 text-nowrap todoText";
     todoText.textContent = todo;
     todoItem.value = "";
 
-    editBtn.className = "ms-auto btn crud-icon";
+    editBtn.className = "ms-2 flex-shrink-0 btn crud-icon";
     editBtn.src = "../assets/images/edit.svg";
 
-    deleteBtn.className = "btn crud-icon";
+    deleteBtn.className = "ms-1 btn flex-shrink-0 btn crud-icon";
     deleteBtn.src = "../assets/images/delete.svg";
 
-    doneBtn.className = "ms-3 btn crud-icon";
-    doneBtn.src = "../assets/images/done.svg";
+    doneBtn.className = "ms-1 btn flex-shrink-0 crud-icon p-0 m-0";
+    doneBtnImg.className = "btn crud-icon border-0 border-0";
+    doneBtnImg.src = "../assets/images/done.svg";
 
     if (state != null) {
         doneBtn.disabled = "true";
@@ -62,6 +65,8 @@ function createNewElement(todo, state = null) {
         itemWrapper.style.backgroundColor = "lightgreen";
         updateStoredValue();
     }
+
+    doneBtn.appendChild(doneBtnImg);
 
     itemWrapper.appendChild(id);
     itemWrapper.appendChild(todoText);

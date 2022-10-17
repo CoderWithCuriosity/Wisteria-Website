@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-:root{
+:root {
     --shadow: 0 10px 35px rgb(75, 75, 75);
     --transition: all .5s ease-in-out;
     --brand-color: #8c5ef3;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -14,27 +14,27 @@
     font-family: "Poppins", sans-serif;
 }
 
-#navbar{
+#navbar {
     background-color: var(--brand-color);
 }
 
-.nav-item:hover{
+.nav-item:hover {
     color: rgb(216, 216, 216);
     transition: 0.2s ease-in-out;
     border-bottom: 1px solid white;
 }
 
-.active{
+.active {
     border-bottom: 1px solid white;
 }
 
-.scrolled{
+.scrolled {
     padding: 5px;
     transition: var(--transition);
     box-shadow: var(--shadow);
 }
 
-.desc-title{
+.desc-title {
     position: absolute;
     color: var(--brand-color);
     width: fit-content;
@@ -42,7 +42,7 @@
     z-index: 1;
 }
 
-.desc{
+.desc {
     position: absolute;
     width: fit-content;
     top: 80px;
@@ -50,7 +50,7 @@
     z-index: 1;
 }
 
-.desc-btn{
+.desc-btn {
     position: absolute;
     color: white;
     background-color: transparent;
@@ -62,19 +62,65 @@
     z-index: 1;
 }
 
-.desc-btn:hover{
+.desc-btn:hover {
     transition: var(--transition);
     background-color: white;
     color: black;
 }
 
-.hidden{
+.welcome-text {
+    font-size: 20px;
+}
+
+.carousel-item img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.hidden {
     max-height: 450px;
     overflow: hidden;
     opacity: 0;
 }
 
-.show{
+.show {
     transition: var(--transition);
     opacity: 1;
+}
+
+@media (max-width: 576px) {
+    .desc-title {
+        top: 10px;
+    }
+
+    .desc {
+        top: 50px;
+        font-size: 12px;
+    }
+
+    .desc-btn {
+        bottom: 10px;
+    }
+
+    .carousel-item img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .welcome-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 280px) {
+    .desc {
+        top: 50px;
+        font-size: 12px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+        object-fit: cover;
+    }
 }
