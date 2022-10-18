@@ -21,7 +21,6 @@
     top: 10px;
 }
 
-<<<<<<< HEAD
 
 /* stylling for the pc games */
 .a-text h1{
@@ -374,28 +373,3 @@ margin-top: 50px;
             }
     
 }
-=======
-@media (min-width: 992px) {
-    #images-carousel-section{
-        height: 500px;
-    }
-}
-
-@media (max-width: 991px) {
-    #images-carousel-section{
-        height: 500px;
-    }
-}
-
-@media (max-width: 768px) {
-    #images-carousel-section{
-        height: 300px;
-    }
-}
-
-@media (max-width: 576px) {
-    #images-carousel-section{
-        height: 300px;
-    }
-}
->>>>>>> 61f0f2dc9eb2f652cca0f221763bae46022070bc
