@@ -241,6 +241,10 @@ body{
 /* Bro Please I want you to arrange all this unkown items below this particular comment.
 Please arrange them according to their respective page.
 Make sure to arrange all of this code below comment to their respective pages. I don't want them here in this index.css*/
+
+
+
+
 img {
   max-width: 100%;
   -o-object-fit: cover;
@@ -256,6 +260,14 @@ img {
 small {
   margin: 10px 0;
 }
+
+
+/* MY CODE  */
+
+
+
+
+
 
 
 .main_banner {
@@ -490,11 +502,18 @@ footer .foot .copyr p {
   margin: 20px auto;
 }
 
+
+
+
+/* ENDING OF MY CODE */
+
 @media (min-width: 992px) {
   #images-carousel-section {
     height: 500px;
   }
 
+
+  /* MY CODE */
   .container {
     padding: 0 40px;
   }
@@ -640,9 +659,18 @@ footer .foot .copyr p {
     margin-top: 0px;
   }
 
+
+  /* ENDING OF MY CODE */
+
+
+
+
 }
 
 @media (min-width: 1024px) {
+
+
+  /* MY CODE */
   .p_cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -657,5 +685,7 @@ footer .foot .copyr p {
   .p_cards .card {
     width: 24%;
   }
+
+  /*  */
 
 }
