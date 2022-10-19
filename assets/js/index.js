@@ -17,10 +17,11 @@ hiddenElements.forEach((el) => {
 
 //Checking if the user scrolls the page and perform a function
 window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar')
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        document.getElementById('navbar').classList.add('scrolled');
+        navbar.classList.add('scrolled');
     } else {
-        document.getElementById('navbar').classList.remove('scrolled');
+        navbar.classList.remove('scrolled');
     }
 });
 
