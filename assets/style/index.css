@@ -251,11 +251,6 @@ img {
   object-fit: cover;
 }
 
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 small {
   margin: 10px 0;
@@ -264,12 +259,87 @@ small {
 
 /* MY CODE  */
 
+/* footer */
 
 
+footer {
+  background-color: #f4f4f4;
+  min-height: 100px;
+}
 
+footer .foot {
+  padding: 20px 0;
+}
 
+footer .foot h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
 
+footer .foot p {
+  margin: 0;
+}
 
+footer .foot .new_mail {
+  background-color: #ffffff;
+  max-width: 350px;
+  position: relative;
+  height: 50px;
+  margin-bottom: 15px;
+  border-radius: 50px;
+}
+
+footer .foot .new_mail input {
+  height: 47px;
+  background: transparent;
+  border: 0;
+  border-radius: 50px;
+  width: 254px;
+  outline: 0;
+  padding: 15px;
+}
+
+footer .foot .new_mail button {
+  width: 70px;
+  height: 35px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  top: 7px;
+  right: 10px;
+  position: absolute;
+  background-color: #8c5ef3;
+  border-radius: 50px;
+}
+
+footer .foot p {
+  max-width: 450px;
+}
+
+footer .foot .copyr p {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px auto;
+}
+
+footer .foot .copyr ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer .foot .copyr ul li a img {
+  width: 30px;
+  height: 30px;
+}
 
 
 

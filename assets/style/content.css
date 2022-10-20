@@ -417,6 +417,13 @@ input:valid {
   right: 20px;
   bottom: 20px;
 }
+
+ .container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+} 
+
 /*# sourceMappingURL=content.css.map */
 
 
