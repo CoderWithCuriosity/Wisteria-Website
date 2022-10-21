@@ -52,52 +52,52 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background-color: var(--light-theme-bg-color);
 }
 
-#light-theme-btn{
+#light-theme-btn {
   background-color: var(--light-theme-header-color);
   color: var(--light-theme-text-color);
 }
 
-#light-theme-btn:hover{
+#light-theme-btn:hover {
   color: var(--light-theme-header-hover-color);
 }
 
-#dark-theme-btn{
+#dark-theme-btn {
   background-color: var(--dark-theme-header-color);
   color: var(--dark-theme-text-color);
 }
 
-#dark-theme-btn:hover{
+#dark-theme-btn:hover {
   color: var(--dark-theme-header-hover-color);
 }
 
-#primary-theme-btn{
+#primary-theme-btn {
   background-color: var(--primary-theme-header-color);
   color: var(--primary-theme-text-color);
 }
 
-#primary-theme-btn:hover{
+#primary-theme-btn:hover {
   color: var(--primary-theme-header-hover-color);
 }
 
-#success-theme-btn{
+#success-theme-btn {
   background-color: var(--success-theme-header-color);
   color: var(--success-theme-text-color);
 }
 
-#success-theme-btn:hover{
+#success-theme-btn:hover {
   color: var(--success-theme-header-hover-color);
 }
 
-#danger-theme-btn{
+#danger-theme-btn {
   background-color: var(--danger-theme-header-color);
   color: var(--danger-theme-text-color);
 }
 
-#danger-theme-btn:hover{
+#danger-theme-btn:hover {
   color: var(--danger-theme-header-hover-color);
 }
 
@@ -181,6 +181,19 @@ body{
   opacity: 1;
 }
 
+@media (min-width: 992px) {
+  #images-carousel-section {
+    height: 500px;
+  }
+
+
+
+
+
+
+
+}
+
 @media (max-width: 991px) {
   #images-carousel-section {
     height: 500px;
@@ -236,55 +249,3 @@ body{
 
 
 }
-
-
-/* Bro Please I want you to arrange all this unkown items below this particular comment.
-Please arrange them according to their respective page.
-Make sure to arrange all of this code below comment to their respective pages. I don't want them here in this index.css*/
-
-
-
-
-img {
-  max-width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-small {
-  margin: 10px 0;
-}
-
-
-/* MY CODE  */
-
-
-
-
-
-
-
-
-
-
-/* ENDING OF MY CODE */
-
-@media (min-width: 992px) {
-  #images-carousel-section {
-    height: 500px;
-  }
-
-
-  
-
-
-
-
-}
-
