@@ -30,6 +30,9 @@ padding-bottom: 50px;
 }
 
 
+
+
+
 .carousel {
     max-width: 1300px;
     margin: 0 auto;
@@ -129,6 +132,16 @@ padding-bottom: 50px;
   background:transparent;
   border: 2px solid #8c5ef3;
   border-radius: 50px;
+}
+
+
+
+.a1-text{
+    box-shadow: 5px 5px 12px rgb(68, 68, 68);
+    cursor: pointer;
+}
+.a1-text:hover, .a1-text:focus .a1-text:active{
+    transform: scale(1.025);
 }
 /*  */
 
