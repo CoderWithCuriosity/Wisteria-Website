@@ -186,12 +186,6 @@ body {
     height: 500px;
   }
 
-
-
-
-
-
-
 }
 
 @media (max-width: 991px) {
@@ -199,15 +193,12 @@ body {
     height: 500px;
   }
 
-
-
 }
 
 @media (max-width: 768px) {
   #images-carousel-section {
     height: 300px;
   }
-
 
 }
 
@@ -247,5 +238,25 @@ body {
     }
   }
 
+}
 
+@media (min-width: 992px) {
+  #images-carousel-section {
+    height: 500px;
+  }
+
+}
+
+#emailSubmitBtn{
+  background-color: var(--light-theme-header-color);
+  color: var(--light-theme-bg-color);
+}
+
+#footer-holder{
+  background-color: var(--light-theme-bg-color);
+  max-width: 900px;
+}
+
+.footer-icon{
+  color: var(--danger-theme-header-hover-color);
 }
