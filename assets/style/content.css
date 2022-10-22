@@ -82,7 +82,7 @@ aside {
 aside {
   background-color: #ffffff;
   -webkit-box-shadow: var(--box-shadow);
-          box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
   padding: 30px;
 }
 
@@ -131,8 +131,9 @@ aside .related .rt h5 {
 .inmail {
   margin: 100px auto;
   padding: 30px;
-  -webkit-box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.05), 0px 2px 8px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.05), 0px 2px 8px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.05),
+    0px 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.05), 0px 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .inmail form h3 {
@@ -378,7 +379,7 @@ input:valid {
 .profile .all_post .p_cards .card {
   background-color: #ffffff;
   -webkit-box-shadow: var(--box-shadow);
-          box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
   border-radius: 5px;
   margin: 50px 0;
 }
@@ -418,20 +419,18 @@ input:valid {
   bottom: 20px;
 }
 
- .container {
+.container {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
-} 
+}
 
-/*# sourceMappingURL=content.css.map */
 
 
 @media (min-width: 992px) {
   #images-carousel-section {
     height: 500px;
   }
-
 
   /* MY CODE */
   .container {
@@ -577,20 +576,12 @@ input:valid {
   .bio .b_text {
     width: 70%;
     margin-top: 0px;
-  } 
+  }
 
-
-  /* ENDING OF MY CODE */
-
-
-
-
+ 
 }
 
-
 @media (min-width: 1024px) {
-
-
   /* MY CODE */
   .p_cards {
     display: -webkit-box;
