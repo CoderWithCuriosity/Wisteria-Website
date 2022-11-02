@@ -1,191 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
-  <link rel="stylesheet" href="../assets/bootstrap-5.2.0-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/style/index.css">
-  <link rel="stylesheet" href="../assets/style/music.css">
-  <title>Wisteria - Musics</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.0-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../assets/style/index.css" />
+    <link rel="stylesheet" href="../assets/style/music.css" />
+    <title>Wisteria - Musics</title>
+  </head>
 
-<body>
-  <!-- Nav Section -->
-  <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
-    <div class="container position-relative py-2 py-sm-2 py-lg-1 d-lg-flex flex-lg-column">
-      <h1><a class="f-1" href="./index.html" style="color: aliceblue; text-decoration: none;"
-          class="pt-3 hidden">Wisteria</a>
-      </h1>
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
-        onclick="toggleThemeChanger()">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="navbar-items" class="collapse navbar-collapse">
-        <ul class="navbar-nav fs-5 flex-wrap justify-content-lg-center align-items-lg-center">
-          <li class="nav-item"><a class="nav-link text-light hidden" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-light hidden" href="./discover.html">Discover</a></li>
-          <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./online-games.html">Online
-              games</a></li>
-          <li class="nav-item"><a class="nav-link text-light hidden" href="./online-movies.html">Movies</a></li>
-          <li class="nav-item"><a class="nav-link text-light hidden" href="./business.html">Business</a></li>
-          <li class="nav-item"><a class="active nav-link text-light hidden" href="./musics.html">Music</a></li>
-          <li class="nav-item"><a class="nav-link text-light hidden" href="./wallpapers.html">Wallpapers</a></li>
-          <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./todo-list.html">To-do-list</a>
-          </li>
-          <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./community-forum.html">Community
-              forum</a></li>
-          <li class="nav-item"><a class=" nav-link text-light text-nowrap hidden" href="./sport.html">Sport</a></li>
-        </ul>
+  <body>
+    <!-- Nav Section -->
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+      <div
+        class="container position-relative py-2 py-sm-2 py-lg-1 d-lg-flex flex-lg-column"
+      >
+        <h1>
+          <a
+            class="f-1"
+            href="./index.html"
+            style="color: aliceblue; text-decoration: none"
+            class="pt-3 hidden"
+            >Wisteria</a
+          >
+        </h1>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          onclick="toggleThemeChanger()"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-items" class="collapse navbar-collapse">
+          <ul
+            class="navbar-nav fs-5 flex-wrap justify-content-lg-center align-items-lg-center"
+          >
+            <li class="nav-item">
+              <a class="active nav-link text-light hidden" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light hidden" href="./pages/discover.html"
+                >Discover</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-nowrap hidden"
+                href="./pages/online-games.html"
+                >Online games</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light hidden"
+                href="./pages/online-movies.html"
+                >Movies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light hidden" href="./pages/business.html"
+                >Business</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light hidden" href="./pages/musics.html"
+                >Music</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light hidden"
+                href="./pages/wallpapers.html"
+                >Wallpapers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-nowrap hidden"
+                href="./pages/todo-list.html"
+                >To-do-list</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-nowrap hidden"
+                href="./pages/community-forum.html"
+                >Community forum</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-nowrap hidden"
+                href="./pages/sport.html"
+                >Sport</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--Theme Changer-->
+        <div id="theme-changer-container" class="position-absolute dropdown">
+          <button
+            id="theme-changer-btn"
+            class="btn fs-3 py-1 px-3 dropdown-toggle bi-palette"
+            type="button"
+            data-bs-toggle="dropdown"
+          >&nbsp</button>
+          <ul class="dropdown-menu px-1">
+            <li>
+              <a
+                id="light-theme-btn"
+                class="dropdown-item mb-1 rounded"
+                href="#"
+                >Light</a
+              >
+            </li>
+            <li>
+              <a id="dark-theme-btn" class="dropdown-item mb-1 rounded" href="#"
+                >Dark</a
+              >
+            </li>
+            <li>
+              <a
+                id="primary-theme-btn"
+                class="dropdown-item mb-1 rounded"
+                href="#"
+                >Primary</a
+              >
+            </li>
+            <li>
+              <a
+                id="success-theme-btn"
+                class="dropdown-item mb-1 rounded"
+                href="#"
+                >Success</a
+              >
+            </li>
+            <li>
+              <a
+                id="danger-theme-btn"
+                class="dropdown-item mb-1 rounded"
+                href="#"
+                >Danger</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <!--Theme Changer-->
-      <div id="theme-changer-container" class="position-absolute dropdown">
-        <button id="theme-changer-btn" class="btn fs-3 py-1 px-3 dropdown-toggle bi-palette" type="button"
-          data-bs-toggle="dropdown"> </button>
-        <ul class="dropdown-menu px-1">
-          <li><a id="light-theme-btn" class="dropdown-item mb-1 rounded" href="#"
-              onclick="changeTheme('light')">Light</a></li>
-          <li><a id="dark-theme-btn" class="dropdown-item mb-1 rounded" href="#" onclick="changeTheme('dark')">Dark</a>
-          </li>
-          <li><a id="primary-theme-btn" class="dropdown-item mb-1 rounded" href="#"
-              onclick="changeTheme('primary')">Primary</a></li>
-          <li><a id="success-theme-btn" class="dropdown-item mb-1 rounded" href="#"
-              onclick="changeTheme('success')">Success</a></li>
-          <li><a id="danger-theme-btn" class="dropdown-item mb-1 rounded" href="#"
-              onclick="changeTheme('danger')">Danger</a></li>
-        </ul>
+    </nav>
+
+    <section class="container mb-2">
+      <div class="d-flex justify-content-center a-text">
+        <h1 class="auto text-center fs-3"></h1>
       </div>
-    </div>
-    </div>
-  </nav>
+      <div class="b-text">
+        <!-- for loop -->
+        <div class="b1-text">
+          <img src="https://static.netnaija.com/i/gEeK8exg7P8.jpg" alt="" />
+          <h4 class="artist-song">Cough</h4>
+          <h4 class="artist-name">KIzz daniel</h4>
+          <audio controls preload="metadata">
+            <source
+              src="../assets/audio/01. Kendrick Lamar - Black Panther - (www.SongsLover.stream).mp3"
+              type="audio/ogg"
+            />
+          </audio>
 
-  <section class="container mb-2">
-    <div class="d-flex justify-content-center a-text">
-      <h1 class="auto text-center"></h1>
-    </div>
-    <div class="b-text">
-      <!-- for loop -->
-      <div class="b1-text">
+          <a href="../assets/audio/Adekunle_Gold_-_It_Is_What_It_Is_IIWII_.mp3">
+            <button>Download</button>
+          </a>
+        </div>
 
-        <img src="https://static.netnaija.com/i/gEeK8exg7P8.jpg" alt="">
-        <h4 style="color: red;">Cough </h4>
-        <h4 style="color: rgb(134, 133, 133);">KIzz daniel</h4>
-        <audio controls preload="metadata">
-          <source src="../assets/audio/01. Kendrick Lamar - Black Panther - (www.SongsLover.stream).mp3"
-            type="audio/ogg">
-        </audio>
+        <div class="b1-text">
+          <img src="https://static.netnaija.com/i/PrO7Oe5RNyp.jpg" alt="" />
+          <h4 class="artist-song">Jeun to da</h4>
+          <h4 class="artist-name">Reekado banks</h4>
+          <!-- color: rgb(134, 133, 133) -->
+          <audio controls preload="metadata">
+            <source
+              src="../assets/audio/01. Kendrick Lamar - Black Panther - (www.SongsLover.stream).mp3"
+              type="audio/ogg"
+            />
+          </audio>
 
-        <a href="../assets/audio/Adekunle_Gold_-_It_Is_What_It_Is_IIWII_.mp3">
-          <button>Download</button>
-        </a>
-      </div>
+          <a href="../assets/audio/Adekunle_Gold_-_It_Is_What_It_Is_IIWII_.mp3">
+            <button>Download</button>
+          </a>
+        </div>
 
-      <div class="b1-text">
+        <div class="b1-text">
+          <img src="https://static.netnaija.com/i/ZOoan3WONjA.jpg" alt="" />
+          <h4 class="artist-song">How are you doing</h4>
+          <h4 class="artist-name">Johhny drille</h4>
+          <audio controls preload="metadata">
+            <source
+              src="../assets/audio/01. Kendrick Lamar - Black Panther - (www.SongsLover.stream).mp3"
+              type="audio/ogg"
+            />
+          </audio>
 
-        <img src="https://static.netnaija.com/i/PrO7Oe5RNyp.jpg" alt="">
-        <h4 style="color: red;">Jeun to da </h4>
-        <h4 style="color: rgb(134, 133, 133);">Reekado banks</h4>
-        <audio controls preload="metadata">
-          <source src="../assets/audio/01. Kendrick Lamar - Black Panther - (www.SongsLover.stream).mp3"
-            type="audio/ogg">
-        </audio>
+          <a href="../assets/audio/Adekunle_Gold_-_It_Is_What_It_Is_IIWII_.mp3">
+            <button>Download</button>
+          </a>
+        </div>
 
+        <div class="b1-text">
+          <img src="https://static.netnaija.com/i/Wz27W3w375R.jpg" alt="" />
+          <h4 class="artist-name">Back in uni</h4>
+          <h4 class="artist-name">Blaqbonez</h4>
+          <audio controls preload="metadata">
+            <source
+              src="../assets/audio/01. Kendrick Lamar - Black Panther - (www.SongsLover.stream).mp3"
+              type="audio/ogg"
+            />
+          </audio>
 
-        <a href="../assets/audio/Adekunle_Gold_-_It_Is_What_It_Is_IIWII_.mp3">
-          <button>Download</button>
-        </a>
-      </div>
+          <a href="../assets/audio/Adekunle_Gold_-_It_Is_What_It_Is_IIWII_.mp3">
+            <button>Download</button>
+          </a>
+        </div>
 
-      <div class="b1-text">
-
-        <img src="https://static.netnaija.com/i/ZOoan3WONjA.jpg" alt="">
-        <h4 style="color: red;">How are you doing </h4>
-        <h4 style="color: rgb(134, 133, 133);">Johhny drille</h4>
-        <audio controls preload="metadata">
-          <source src="../assets/audio/01. Kendrick Lamar - Black Panther - (www.SongsLover.stream).mp3"
-            type="audio/ogg">
-        </audio>
-
-
-        <a href="../assets/audio/Adekunle_Gold_-_It_Is_What_It_Is_IIWII_.mp3">
-          <button>Download</button>
-        </a>
-      </div>
-
-      <div class="b1-text">
-
-        <img src="https://static.netnaija.com/i/Wz27W3w375R.jpg" alt="">
-        <h4 style="color: red;">Back in uni </h4>
-        <h4 style="color: rgb(134, 133, 133);">Blaqbonez</h4>
-        <audio controls preload="metadata">
-          <source src="../assets/audio/01. Kendrick Lamar - Black Panther - (www.SongsLover.stream).mp3"
-            type="audio/ogg">
-        </audio>
-
-
-        <a href="../assets/audio/Adekunle_Gold_-_It_Is_What_It_Is_IIWII_.mp3">
-          <button>Download</button>
-        </a>
+        <!-- end for loop -->
       </div>
 
-      <!-- enf for loop -->
-    </div>
-
-
-    <!-- footer section -->
-    <footer class="container mb-2 d-flex justify-content-center text-center">
-      <div id="footer-holder">
-        <h3 id="foot-desc" class="fs-2 d-flex justify-content-center align-items-center my-4">Would you like to
-          join our Community</h3>
-        <form action="" class="d-flex">
-          <input type="text" placeholder="Email Address" class="form-control" />
-          <button id="emailSubmitBtn" class="btn border px-5 py-2 mx-2" type="submit">Join</button>
-        </form>
-        <p class="foot-desc-text py-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          sed nobis accusamus corrupti! Tempora aliquid iure, velit beatae
-          ullam optio molestias consequatur, eius placeat vel quod a quaerat
-          quas praesentium?
-        </p>
-        <hr />
-        <ul class="d-flex flex-row fs-1 justify-content-between">
-          <li>
-            <a href="" class="bi-facebook footer-icon"></a>
-          </li>
-          <li>
-            <a href="" class="bi-twitter footer-icon"></a>
-          </li>
-          <li>
-            <a href="" class="bi-instagram footer-icon"></a>
-          </li>
-          <li>
-            <a href="" class="bi-whatsapp footer-icon"></a>
-          </li>
-          <li>
-            <a href="" class="bi-github footer-icon"></a>
-          </li>
-        </ul>
-        <p class="foot-desc-text text-center">&copy; Hope we made your day</p>
-      </div>
-    </footer>
-
-  </section>
-  <!-- js duplex -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    var typed = new Typed(".auto", {
-      strings: [" Here are some of the musics you should listen to and download"],
-      typeSpeed: 50,
-      backSpeed: 50,
-    })
-  </script>
-  <script src="../assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="./../assets/js/music-theme-changer.js"></script> -->
-  <script src="../assets/js/index.js"></script>
-</body>
-
+      <!-- footer section -->
+      <footer class="container mb-2 d-flex justify-content-center text-center">
+        <div id="footer-holder">
+          <h3
+            id="foot-desc"
+            class="fs-2 d-flex justify-content-center align-items-center my-4"
+          >
+            Would you like to join our Community
+          </h3>
+          <form action="" class="d-flex">
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="form-control"
+            />
+            <button
+              id="emailSubmitBtn"
+              class="btn border px-5 py-2 mx-2"
+              type="submit"
+            >
+              Join
+            </button>
+          </form>
+          <p class="foot-desc-text py-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            sed nobis accusamus corrupti! Tempora aliquid iure, velit beatae
+            ullam optio molestias consequatur, eius placeat vel quod a quaerat
+            quas praesentium?
+          </p>
+          <hr />
+          <ul class="d-flex flex-row fs-1 justify-content-between">
+            <li>
+              <a href="" class="bi-facebook footer-icon"></a>
+            </li>
+            <li>
+              <a href="" class="bi-twitter footer-icon"></a>
+            </li>
+            <li>
+              <a href="" class="bi-instagram footer-icon"></a>
+            </li>
+            <li>
+              <a href="" class="bi-whatsapp footer-icon"></a>
+            </li>
+            <li>
+              <a href="" class="bi-github footer-icon"></a>
+            </li>
+          </ul>
+          <p class="foot-desc-text text-center">&copy; Hope we made your day</p>
+        </div>
+      </footer>
+    </section>
+    <!-- js duplex -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var typed = new Typed(".auto", {
+        strings: [
+          " Here are some of the musics you should listen to and download",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+      });
+    </script>
+    <script src="../assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./../assets/js/music-theme-changer.js"></script> -->
+    <script src="../assets/js/index.js"></script>
+  </body>
 </html>
