@@ -52,52 +52,52 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background-color: var(--light-theme-bg-color);
 }
 
-#light-theme-btn{
+#light-theme-btn {
   background-color: var(--light-theme-header-color);
   color: var(--light-theme-text-color);
 }
 
-#light-theme-btn:hover{
+#light-theme-btn:hover {
   color: var(--light-theme-header-hover-color);
 }
 
-#dark-theme-btn{
+#dark-theme-btn {
   background-color: var(--dark-theme-header-color);
   color: var(--dark-theme-text-color);
 }
 
-#dark-theme-btn:hover{
+#dark-theme-btn:hover {
   color: var(--dark-theme-header-hover-color);
 }
 
-#primary-theme-btn{
+#primary-theme-btn {
   background-color: var(--primary-theme-header-color);
   color: var(--primary-theme-text-color);
 }
 
-#primary-theme-btn:hover{
+#primary-theme-btn:hover {
   color: var(--primary-theme-header-hover-color);
 }
 
-#success-theme-btn{
+#success-theme-btn {
   background-color: var(--success-theme-header-color);
   color: var(--success-theme-text-color);
 }
 
-#success-theme-btn:hover{
+#success-theme-btn:hover {
   color: var(--success-theme-header-hover-color);
 }
 
-#danger-theme-btn{
+#danger-theme-btn {
   background-color: var(--danger-theme-header-color);
   color: var(--danger-theme-text-color);
 }
 
-#danger-theme-btn:hover{
+#danger-theme-btn:hover {
   color: var(--danger-theme-header-hover-color);
 }
 
@@ -181,12 +181,17 @@ body{
   opacity: 1;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 992px) {
   #images-carousel-section {
     height: 500px;
   }
 
+}
 
+@media (max-width: 991px) {
+  #images-carousel-section {
+    height: 500px;
+  }
 
 }
 
@@ -194,7 +199,6 @@ body{
   #images-carousel-section {
     height: 300px;
   }
-
 
 }
 
@@ -234,127 +238,25 @@ body{
     }
   }
 
-
 }
-
-
-/* Bro Please I want you to arrange all this unkown items below this particular comment.
-Please arrange them according to their respective page.
-Make sure to arrange all of this code below comment to their respective pages. I don't want them here in this index.css*/
-
-
-
-
-img {
-  max-width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-
-small {
-  margin: 10px 0;
-}
-
-
-/* MY CODE  */
-
-/* footer */
-
-
-footer {
-  background-color: #f4f4f4;
-  min-height: 100px;
-}
-
-footer .foot {
-  padding: 20px 0;
-}
-
-footer .foot h3 {
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-footer .foot p {
-  margin: 0;
-}
-
-footer .foot .new_mail {
-  background-color: #ffffff;
-  max-width: 350px;
-  position: relative;
-  height: 50px;
-  margin-bottom: 15px;
-  border-radius: 50px;
-}
-
-footer .foot .new_mail input {
-  height: 47px;
-  background: transparent;
-  border: 0;
-  border-radius: 50px;
-  width: 254px;
-  outline: 0;
-  padding: 15px;
-}
-
-footer .foot .new_mail button {
-  width: 70px;
-  height: 35px;
-  font-weight: 600;
-  font-size: 14px;
-  color: #ffffff;
-  border: 0;
-  cursor: pointer;
-  top: 7px;
-  right: 10px;
-  position: absolute;
-  background-color: #8c5ef3;
-  border-radius: 50px;
-}
-
-footer .foot p {
-  max-width: 450px;
-}
-
-footer .foot .copyr p {
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  margin: 20px auto;
-}
-
-footer .foot .copyr ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 80%;
-  margin: 0 auto;
-}
-
-footer .foot .copyr ul li a img {
-  width: 30px;
-  height: 30px;
-}
-
-
-
-/* ENDING OF MY CODE */
 
 @media (min-width: 992px) {
   #images-carousel-section {
     height: 500px;
   }
 
-
-  
-
-
-
-
 }
 
+#emailSubmitBtn{
+  background-color: var(--light-theme-header-color);
+  color: var(--light-theme-bg-color);
+}
+
+#footer-holder{
+  background-color: var(--light-theme-bg-color);
+  max-width: 900px;
+}
+
+.footer-icon{
+  color: var(--danger-theme-header-hover-color);
+}

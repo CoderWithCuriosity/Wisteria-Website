@@ -1,42 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/bootstrap-5.2.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/style/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.2.0-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/style/online-movies.css" />
+    <link rel="stylesheet" href="../assets/style/index.css" />
     <title>Wisteria - Online Movies</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Nav Section-->
     <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
-        <div class="container pt-2 pb-2 d-lg-flex flex-lg-column">
-            <h1><a class="f-1" href="./index.html" style="color: aliceblue; padding-top: 20px; text-decoration: none;" class="hidden">Wisteria</a>
-            </h1>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbar-items" class="collapse navbar-collapse">
-                <ul class="navbar-nav fs-5 flex-wrap justify-content-lg-center align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="./discover.html">Discover</a></li>
-                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./online-games.html">Online games</a></li>
-                    <li class="nav-item"><a class="active nav-link text-light hidden" href="./online-movies.html">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="./business.html">Business</a></li>
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="./musics.html">Music</a></li>
-                    <li class="nav-item"><a class="nav-link text-light hidden" href="./wallpapers.html">Wallpapers</a></li>
-                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./todo-list.html">To-do-list</a></li>
-                    <li class="nav-item"><a class="nav-link text-light text-nowrap hidden" href="./community-forum.html">Community forum</a></li>
-                    <li class="nav-item"><a class=" nav-link text-light text-nowrap hidden" href="./sport.html">Sport</a></li>
-                
-                </ul>
-            </div>
+      <div class="container pt-2 pb-2 d-lg-flex flex-lg-column">
+        <h1>
+          <a
+            class="f-1"
+            href="./index.html"
+            style="color: aliceblue; padding-top: 20px; text-decoration: none"
+            class="hidden"
+            >Wisteria</a
+          >
+        </h1>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-items" class="collapse navbar-collapse">
+          <ul
+            class="navbar-nav fs-5 flex-wrap justify-content-lg-center align-items-lg-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link text-light hidden" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light hidden" href="./discover.html"
+                >Discover</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-nowrap hidden"
+                href="./online-games.html"
+                >Online games</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="active nav-link text-light hidden"
+                href="./online-movies.html"
+                >Movies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light hidden" href="./business.html"
+                >Business</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light hidden" href="./musics.html"
+                >Music</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light hidden" href="./wallpapers.html"
+                >Wallpapers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-nowrap hidden"
+                href="./todo-list.html"
+                >To-do-list</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-nowrap hidden"
+                href="./community-forum.html"
+                >Community forum</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-nowrap hidden"
+                href="./sport.html"
+                >Sport</a
+              >
+            </li>
+          </ul>
         </div>
-        </div>
+      </div>
     </nav>
 
+    <!--Movie Section-->
+    <div class="container-fluid mt-2">
+      <div class="row overflow-hidden">
+        <div
+          class="col-12 col-lg-8 position-relative"
+          id="new_release_container"
+        >
+        <!--  -->
+
+
+
+          <div class="border h-100">
+            
+            <img src="../assets/images/img6.jpg" id="new_release_image" />
+          </div>
+          <!-- link -->
+          <a href="../pages/stream-movie.html">
+          <i
+            class="position-absolute bi-play-circle play-video-icon"
+            style="font-size: 100px"
+          ></i>
+          </a>
+          <!-- link -->
+          <div class="position-absolute movie-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            temporibus, assumenda, officiis iste, blanditiis neque magni officia
+            corporis ipsam minima voluptatibus quibusdam? Ullam error enim
+            eligendi quos voluptate numquam ab.
+          </div>
+        </div>
+        <!--  -->
+
+
+
+        <div class="col-12 col-lg-4 d-none d-md-block">
+
+
+          <div
+            class="d-flex flex-column border px-md-2 h-100 justify-content-center mx-1"
+          >
+            <span
+              class="d-block text-center py-2 my-2 border-bottom-2 fw-bold fs-5 text-light bg-dark"
+              >Similar Movies</span
+            >
+            <div class="row overflow-hidden gx-md-2 gy-2 mb-2">
+
+              <!--  -->
+
+              <div class="col-12 col-sm-6 position-relative">
+
+                <div class="movie-short border">
+                  <img src="../assets/images/img7.jpg" class="short-img" />
+                </div>
+                <i class="position-absolute bi-play-circle play-video-icon"></i>
+              </div>
+
+              <div class="col-12 col-sm-6 position-relative">
+                <div class="movie-short border">
+                  <img src="../assets/images/img8.png" class="short-img" />
+                </div>
+                <i class="position-absolute bi-play-circle play-video-icon"></i>
+              </div>
+            </div>
+            <div class="row overflow-hidden gx-md-2 gy-2">
+              <div class="col-12 col-sm-6 position-relative">
+                <div class="movie-short border">
+                  <img src="../assets/images/img4.jpg" class="short-img" />
+                </div>
+                <i class="position-absolute bi-play-circle play-video-icon"></i>
+              </div>
+              <div class="col-12 col-sm-6 position-relative">
+                <div class="movie-short border">
+                  <img src="../assets/images/img5.jpg" class="short-img" />
+                </div>
+                <i class="position-absolute bi-play-circle play-video-icon"></i>
+              </div>
+
+              <!--  -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Other Movies Section -->
+      <div class="row overflow-hidden my-2 gy-2 gx-md-2 mx-1 mx-sm-2">
+
+<!--  -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <div
+            class="border border-2 border-dark d-flex flex-column justify-content-center p-2 rounded"
+          >
+            <div
+              class="image-container position-relative rounded overflow-hidden"
+            >
+
+              <img src="../assets/images/img5.jpg" class="short-img" />
+              <i class="position-absolute bi-play-circle play-video-icon"></i>
+            </div>
+            <span class="d-block text-center py-2 fw-bold fs-5 text-nowrap">Tekken Bloodline</span>
+            <p class="text-wrap overflow-hidden">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              culpa blanditiis incidunt nulla voluptatum ullam deleniti ipsum
+              quas, dolor ab recusandae quos ipsam error quam fuga reprehenderit
+              delectus minima tempore.
+            </p>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="border border-2 border-dark d-flex flex-column justify-content-center p-2 rounded"
+          >
+            <div
+              class="image-container position-relative rounded overflow-hidden"
+            >
+              <img src="../assets/images/img6.jpg" class="short-img" />
+              <i class="position-absolute bi-play-circle play-video-icon"></i>
+            </div>
+            <span class="d-block text-center py-2 fw-bold fs-5 text-nowrap">Demon Blood Slayer</span>
+            <p class="text-wrap overflow-hidden">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              culpa blanditiis incidunt nulla voluptatum ullam deleniti ipsum
+              quas, dolor ab recusandae quos ipsam error quam fuga reprehenderit
+              delectus minima tempore.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="border border-2 border-dark d-flex flex-column justify-content-center p-2 rounded"
+          >
+            <div
+              class="image-container position-relative rounded overflow-hidden"
+            >
+              <img src="../assets/images/img7.jpg" class="short-img" />
+              <i class="position-absolute bi-play-circle play-video-icon"></i>
+            </div>
+            <span class="d-block text-center py-2 fw-bold fs-5 text-nowrap">Mobius</span>
+            <p class="text-wrap overflow-hidden">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              culpa blanditiis incidunt nulla voluptatum ullam deleniti ipsum
+              quas, dolor ab recusandae quos ipsam error quam fuga reprehenderit
+              delectus minima tempore.
+            </p>
+          </div>
+          
+        </div>
+
+<!-- end -->
+      </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="container mb-2 d-flex justify-content-center">
+      <div id="footer-holder">
+        <h3
+          id="foot-desc"
+          class="fs-2 d-flex justify-content-center align-items-center my-4 text-center"
+        >
+          Would you like to join our Community
+        </h3>
+        <form action="" class="d-flex">
+          <input type="text" placeholder="Email Address" class="form-control" />
+          <button
+            id="emailSubmitBtn"
+            class="btn border px-5 py-2 mx-2"
+            type="submit"
+          >
+            Join
+          </button>
+        </form>
+        <p class="foot-desc-text py-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          sed nobis accusamus corrupti! Tempora aliquid iure, velit beatae ullam
+          optio molestias consequatur, eius placeat vel quod a quaerat quas
+          praesentium?
+        </p>
+        <hr />
+        <ul class="d-flex flex-row fs-1 justify-content-between">
+          <li>
+            <a href="" class="bi-facebook footer-icon"></a>
+          </li>
+          <li>
+            <a href="" class="bi-twitter footer-icon"></a>
+          </li>
+          <li>
+            <a href="" class="bi-instagram footer-icon"></a>
+          </li>
+          <li>
+            <a href="" class="bi-whatsapp footer-icon"></a>
+          </li>
+          <li>
+            <a href="" class="bi-github footer-icon"></a>
+          </li>
+        </ul>
+
+        <p class="foot-desc-text text-center">&copy; Hope we made your day</p>
+      </div>
+    </footer>
+
     <script src="../assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/online-movies.js"></script>
     <script src="../assets/js/index.js"></script>
-</body>
+  </body>
 </html>
