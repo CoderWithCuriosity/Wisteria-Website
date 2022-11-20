@@ -271,7 +271,7 @@ padding-bottom: 50px;
   
   }
   .f-text{
-      padding-left: 30px;
+      padding-left: 0px;
       padding-top: 20px;
   }
   .f-text h1{
@@ -295,7 +295,7 @@ padding-bottom: 50px;
     .g-text{
         padding-right: 0px;
 margin-top: 50px;
-        padding-left: 40px;
+        padding-left: 0px;
     }
     .g-text span{
         padding-left: 10px;
@@ -319,7 +319,7 @@ margin-top: 50px;
       border-radius: 50px;
       }
       .h-text{
-          padding-right: 30px;
+          padding-right: 0px;
 margin-top: 50px;
           padding-left: 0px;
       }
