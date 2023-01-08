@@ -14,6 +14,7 @@
       integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n"
       crossorigin="anonymous"
     />
+    
     <link rel="stylesheet" href="../assets/style/stream.css" />
     <link rel="stylesheet" href="../assets/style/index.css" />
     <title>Wisteria - Online Movies</title>
@@ -119,7 +120,7 @@
 
 
     <section>
-        <div class="a-text">
+        <div class="a-text" id="wrapper">
             <video controls >
                 <source src="../assets/video/Jesus_coming_soon(360p).mp4" type="video/ogg"preload="metadata" >
                 <source src="../assets/video/Jesus_coming_soon(360p).mp4" type="video/webm"preload="metadata" >
@@ -142,21 +143,23 @@
                 src="captions/vtt/sintel-es.vtt" />
             </video>
 
-<a href="../assets/video/Jesus_coming_soon(360p).mp4">
-    <button><img src="https://www.svgrepo.com/show/39042/download.svg" alt=""></button>
+<a href="../assets/video/Jesus_coming_soon(360p).mp4" style="text-decoration: none;">
+    <button>
+     <p>Download</p>
+      <img src="https://www.svgrepo.com/show/39042/download.svg" alt=""></button>
 </a>
         </div>
 
         <span
-        class="d-block text-center py-2 my-2 border-bottom-2 fw-bold fs-5 text-light bg-dark"
-       style="margin-top: 50px;" >Similar Movies</span
+        class="d-block text-center py-2 my-2 border-bottom-2 fw-bold fs-5 text-light bg-dark" id="similar"
+       >Similar Movies</span
       >
          <!-- Other Movies Section -->
-      <div class="row overflow-hidden my-2 gy-2 gx-md-2 mx-1 mx-sm-2">
+      <div class="row overflow-hidden my-2 gy-2 gx-md-2 mx-1 mx-sm-2" id="similar">
 
         <!--  -->
         
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" id="wrapper">
         
                   <div
                     class="border border-2 border-dark d-flex flex-column justify-content-center p-2 rounded"
@@ -168,8 +171,8 @@
                       <img src="../assets/images/img5.jpg" class="short-img" />
                       <i class="position-absolute bi-play-circle play-video-icon"></i>
                     </div>
-                    <span class="d-block text-center py-2 fw-bold fs-5 text-nowrap">Tekken Bloodline</span>
-                    <p class="text-wrap overflow-hidden">
+                    <span class="d-block text-center py-2 fw-bold fs-5 text-nowrap" id="text">Tekken Bloodline</span>
+                    <p class="text-wrap overflow-hidden" id="text">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
                       culpa blanditiis incidunt nulla voluptatum ullam deleniti ipsum
                       quas, dolor ab recusandae quos ipsam error quam fuga reprehenderit
@@ -180,7 +183,7 @@
         
                 <!--  -->
         
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" id="wrapper">
                   <div
                     class="border border-2 border-dark d-flex flex-column justify-content-center p-2 rounded"
                   >
@@ -190,8 +193,8 @@
                       <img src="../assets/images/img6.jpg" class="short-img" />
                       <i class="position-absolute bi-play-circle play-video-icon"></i>
                     </div>
-                    <span class="d-block text-center py-2 fw-bold fs-5 text-nowrap">Demon Blood Slayer</span>
-                    <p class="text-wrap overflow-hidden">
+                    <span class="d-block text-center py-2 fw-bold fs-5 text-nowrap" id="text">Demon Blood Slayer</span>
+                    <p class="text-wrap overflow-hidden" id="text">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
                       culpa blanditiis incidunt nulla voluptatum ullam deleniti ipsum
                       quas, dolor ab recusandae quos ipsam error quam fuga reprehenderit
@@ -203,7 +206,7 @@
         
 
       
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" id="wrapper">
                   <div
                     class="border border-2 border-dark d-flex flex-column justify-content-center p-2 rounded"
                   >
@@ -213,8 +216,8 @@
                       <img src="../assets/images/img7.jpg" class="short-img" />
                       <i class="position-absolute bi-play-circle play-video-icon"></i>
                     </div>
-                    <span class="d-block text-center py-2 fw-bold fs-5 text-nowrap">Mobius</span>
-                    <p class="text-wrap overflow-hidden">
+                    <span class="d-block text-center py-2 fw-bold fs-5 text-nowrap" id="text">Mobius</span>
+                    <p class="text-wrap overflow-hidden" id="text">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
                       culpa blanditiis incidunt nulla voluptatum ullam deleniti ipsum
                       quas, dolor ab recusandae quos ipsam error quam fuga reprehenderit
@@ -230,8 +233,8 @@
     </section>
 
  <!--Footer Section-->
- <footer class="container mb-2 d-flex justify-content-center">
-    <div id="footer-holder">
+ <footer class="container mb-2 d-flex justify-content-center" id="wrapper">
+    <div id="footer-holder wrapper">
       <h3
         id="foot-desc"
         class="fs-2 d-flex justify-content-center align-items-center my-4 text-center"
@@ -248,7 +251,7 @@
           Join
         </button>
       </form>
-      <p class="foot-desc-text py-3">
+      <p class="foot-desc-text py-3" id="text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
         sed nobis accusamus corrupti! Tempora aliquid iure, velit beatae ullam
         optio molestias consequatur, eius placeat vel quod a quaerat quas
@@ -273,7 +276,7 @@
         </li>
       </ul>
 
-      <p class="foot-desc-text text-center">&copy; Hope we made your day</p>
+      <p class="foot-desc-text text-center" id="text">&copy; Hope we made your day</p>
     </div>
   </footer>
 

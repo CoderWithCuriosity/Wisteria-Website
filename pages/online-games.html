@@ -74,8 +74,8 @@
     <!--gaming sectionS-->
     <!-- The gaming section will be divided into three section. (1) The first section is for the images carousel (2) The second section is for the Games list section (3) The third section is for the Related News Feeds-->
 
-    <main class="container">
-        <div class="row gy-2 mt-1">
+    <main class="container" id="wrapper">
+        <div class="row gy-2 mt-1" id="wrapper">
             <!--First Section-->
             <section id="images-carousel-section"
                 class="position-relative col-lg-8 overflow-hidden d-flex justify-content-center align-items-center p-3">
@@ -87,7 +87,7 @@
                         <button type="button" data-bs-slide-to="3" data-bs-target="#gameImages"></button>
                         <button type="button" data-bs-slide-to="4" data-bs-target="#gameImages"></button>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" id="wrapper">
                         <div class="carousel-item active" data-bs-interval="1000">
                             <img src="https://wallpapercave.com/dwp2x/wp10470404.jpg" class="d-block w-100" />
                         </div>
@@ -107,25 +107,25 @@
                     <button class="carousel-control-prev" type="button" data-bs-target="#gameImages"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span class="visually-hidden" id="text">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#gameImages"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
+                        <span class="visually-hidden" id="text">Next</span>
                     </button>
-                    <button id="btn-play" class="btn btn-primary px-5 py-2">PLAY NOW</button>
+                    <button id="btn-play text" class="btn btn-primary px-5 py-2" >PLAY NOW</button>
                 </div>
             </section>
 
             <!--Second Section-->
             <section id="game-selections-section" class="col-lg-4 mt-3 p-2 border d-flex flex-column">
-                <h5 class="p-2 my-2 fw-bold">Recommended Games</h5>
+                <h5 class="p-2 my-2 fw-bold" id="text">Recommended Games</h5>
                 <article>
-                    <div class="d-flex align-items-center rounded border px-3 py-1">
+                    <div class="d-flex align-items-center rounded border px-3 py-1" id="wrapper">
                         <img src="https://wallpapercave.com/wp/wp2315423.jpg" class="game-icon"/>
                         <span class="d-flex ms-2 align-items-center me-auto">
-                            <span class="ms-1">Surbway Surfer</span>
+                            <span class="ms-1" id="text">Surbway Surfer</span>
                             <img src="../assets/images/Vector.png" class="vector-icon align-self-center ms-3 me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
@@ -135,43 +135,43 @@
                         <button class="btn btn-dark px-3 py-1 game-play-btn">PLAY</button>
                     </div>
 
-                    <div class="d-flex align-items-center rounded border px-3 py-1">
+                    <div class="d-flex align-items-center rounded border px-3 py-1" id="wrapper">
                         <img src="https://wallpapercave.com/wp/wp2315423.jpg" class="game-icon"/>
                         <span class="d-flex ms-2 align-items-center me-auto">
-                            <span class="ms-1">Surbway Surfer</span>
+                            <span class="ms-1" id="text">Surbway Surfer</span>
                             <img src="../assets/images/Vector.png" class="vector-icon align-self-center ms-3 me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon"/>
                         </span>
-                        <button class="btn btn-dark px-3 py-1 game-play-btn">PLAY</button>
+                        <button class="btn btn-dark px-3 py-1 game-play-btn" id="text">PLAY</button>
                     </div>
                     
-                    <div class="d-flex align-items-center rounded border px-3 py-1">
+                    <div class="d-flex align-items-center rounded border px-3 py-1" id="wrapper">
                         <img src="https://wallpapercave.com/wp/wp2315423.jpg" class="game-icon"/>
                         <span class="d-flex ms-2 align-items-center me-auto">
-                            <span class="ms-1">Surbway Surfer</span>
+                            <span class="ms-1" id="text">Surbway Surfer</span>
                             <img src="../assets/images/Vector.png" class="vector-icon align-self-center ms-3 me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon"/>
                         </span>
-                        <button class="btn btn-dark px-3 py-1 game-play-btn">PLAY</button>
+                        <button class="btn btn-dark px-3 py-1 game-play-btn" id="text">PLAY</button>
                     </div>
 
-                    <div class="d-flex align-items-center rounded border px-3 py-1">
+                    <div class="d-flex align-items-center rounded border px-3 py-1" id="wrapper">
                         <img src="https://wallpapercave.com/wp/wp2315423.jpg" class="game-icon"/>
                         <span class="d-flex ms-2 align-items-center me-auto">
-                            <span class="ms-1">Surbway Surfer</span>
+                            <span class="ms-1" id="text">Surbway Surfer</span>
                             <img src="../assets/images/Vector.png" class="vector-icon align-self-center ms-3 me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon me-1"/>
                             <img src="../assets/images/Vector.png" class="vector-icon"/>
                         </span>
-                        <button class="btn btn-dark px-3 py-1 game-play-btn">PLAY</button>
+                        <button class="btn btn-dark px-3 py-1 game-play-btn" id="text">PLAY</button>
                     </div>
 
 
@@ -200,45 +200,45 @@
   <!--Third Section-->
 
   <!-- here i create Pc games to download -->
-<div class="a-text">
-    <h1>Pc games you should download </h1>
+<div class="a-text" id="wrapper">
+    <h1 id="text">Pc games you should download </h1>
 
 
-    <div class="a1-text">
+    <div class="a1-text" id="wrapper">
         <img src="../assets/images/img5.jpg" alt="">
-        <h3><a href="" style="color: black; text-decoration: none;">Tekken</a></h3>
+        <h3><a href="" style="color: black; text-decoration: none;" id="text">Tekken</a></h3>
        
     </div>
 
-    <div class="a1-text">
+    <div class="a1-text" id="wrapper">
         <img src="../assets/images/img2.jpg" alt="">
-        <h3><a href="" style="color: black; text-decoration: none;">Gta V </a></h3>
+        <h3><a href="" style="color: black; text-decoration: none;" id="text">Gta V </a></h3>
     </div>
 
 
     <div class="a1-text">
         <img src="../assets/images/img1.jpg" alt="">
-        <h3><a href="" style="color: black; text-decoration: none;">GTA VI</a></h3>
+        <h3><a href="" style="color: black; text-decoration: none;" id="text">GTA VI</a></h3>
     </div>
 
     <div class="a1-text">
         <img src="../assets/images/wallpaper3.jpg" alt="">
-        <h3><a href="" style="color: black; text-decoration: none;">Call of duty</a></h3>
+        <h3><a href="" style="color: black; text-decoration: none;" id="text">Call of duty</a></h3>
     </div>
 
 
     <div class="a1-text">
         <img src="../assets/images/img6.jpg" alt="">
-        <h3><a href="" style="color: black; text-decoration: none;">Tokyo revengers</a></h3>
+        <h3><a href="" style="color: black; text-decoration: none;" id="text">Tokyo revengers</a></h3>
     </div>
     
 </div>
 <!-- game carousel feed -->
-<div class="carousel">
-    <h4>Famous quotations from characters</h4>
-    <div class="bb-text owl-carousel ">
-      <div class="cards"> 
-          <p>" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis odit esse amet ullam eius nihil placeat in, minus quis, repudiandae accusamus illo " - Franklin( GTA V) </p>
+<div class="carousel" id="wrapper">
+    <h4 id="text">Famous quotations from characters</h4>
+    <div class="bb-text owl-carousel " id="wrapper">
+      <div class="cards" id="wrapper"> 
+          <p id="text">" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis odit esse amet ullam eius nihil placeat in, minus quis, repudiandae accusamus illo " - Franklin( GTA V) </p>
       </div>
       <div class="cards">
           <p>
@@ -254,18 +254,18 @@
 </div>
 
 <!-- Game reads -->
-<div class="e-text">
-    <h1>Game reads</h1>
+<div class="e-text" id="wrappper">
+    <h1 id="text">Game reads</h1>
 </div>
 
-<div class="f-text">
+<div class="f-text" id="wrapper">
     <a href="../pages/article.html" style="text-decoration: none;">
     <img src="https://c4.wallpaperflare.com/wallpaper/226/703/780/video-games-god-of-war-kratos-god-of-war-iii-wallpaper-preview.jpg" alt="" loading="lazy">
-    <h1 style="color: black;">God of war to release new chapter on the 3rd of march</h1>
-    <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum fugit laudantium distinctio hic alias molestias praesentium re.... </p>
-    <span style="color: black; text-decoration: none;">Date created: <i style="color: #8c5ef3;">30 minutes ago</i></span>
+    <h1 style="color: black;"  id="text">God of war to release new chapter on the 3rd of march</h1>
+    <p style="color: black;" id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum fugit laudantium distinctio hic alias molestias praesentium re.... </p>
+    <span style="color: black; text-decoration: none;" id="text">Date created: <i style="color: #8c5ef3;">30 minutes ago</i></span>
     <a href="../pages/article.html">
-    <button>Read more</button>
+    <button id="text">Read more</button>
     </a>
     </a> 
 </div>
@@ -298,15 +298,15 @@
 
 
 <!-- footer section -->
-<footer class="container mb-2 d-flex justify-content-center">
+<footer class="container mb-2 d-flex justify-content-center" id="wrapper">
   <div id="footer-holder">
-      <h3 id="foot-desc" class="fs-2 d-flex justify-content-center align-items-center my-4 text-center">Would you like to
+      <h3 id="foot-desc" class="fs-2 d-flex justify-content-center align-items-center my-4 text-center" id="text">Would you like to
           join our Community</h3>
       <form action="" class="d-flex">
           <input type="text" placeholder="Email Address" class="form-control" />
           <button id="emailSubmitBtn" class="btn border px-5 py-2 mx-2" type="submit">Join</button>
       </form>
-      <p class="foot-desc-text py-3">
+      <p class="foot-desc-text py-3" id="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
           sed nobis accusamus corrupti! Tempora aliquid iure, velit beatae
           ullam optio molestias consequatur, eius placeat vel quod a quaerat
@@ -330,7 +330,7 @@
               <a href="" class="bi-github footer-icon"></a>
           </li>
       </ul>
-      <p class="foot-desc-text text-center">&copy; Hope we made your day</p>
+      <p class="foot-desc-text text-center" id="text"> &copy; Hope we made your day</p>
   </div>
 </footer>
   
