@@ -9,3 +9,16 @@
     background-color: rgba(0, 0, 0, 0.8);
     bottom: 0;
 }
+
+@media (min-width: 768px) {
+    .col-6:nth-child(odd){
+        transform: translateY(-25px);
+    }
+}
+ 
+@media (max-width: 767px) {
+    .col-6:nth-child(even){
+        transform: translateY(25px);
+    }
+    
+}
