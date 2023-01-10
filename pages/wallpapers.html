@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../assets/bootstrap-5.2.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/style/wallpaper.css">
     <link rel="stylesheet" href="../assets/style/index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <title>Wisteria</title>
 </head>
 <body>
@@ -73,14 +76,14 @@
     </div>
 
     <!--All Sections-->
-    <section class="container mb-2 mt-5">
+    <section class="container mb-2 mt-5 gallery">
         <div class="container-fluid">
             <div class="row overflow-hidden gy-2 gx-lg-2 gy-lg-2">
                 <div class="col-6 col-md-3 overflow-hidden">
                     <div class="wallpaper-div position-relative overflow-hidden rounded">
-                        <img src="../assets/images/img1.jpg" class="wallpaperImg"/>
-                        <div class="content w-100 text-center py-2 text-light">
-                            <span>GTA V</span>
+                        <a href="../assets/images/img1.jpg"><img src="../assets/images/img1.jpg" class="wallpaperImg"/></a>
+                        <div class="content w-100 text-center mt-3 py-2 text-light">
+                           <a href="../assets/images/img1.jpg" class="btn btn-primary bi bi-download px-2">Download</a>
                         </div>
                     </div>
                 </div>
@@ -195,6 +198,22 @@
         </footer>
     </section>
 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+  $('.gallery').magnificPopup({
+
+    delegate:'a',
+    type:'image',
+    gallery:{
+      enabled:true 
+    }
+
+  });
+
+</script>
     <script src="../assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/index.js"></script>
 </body>
